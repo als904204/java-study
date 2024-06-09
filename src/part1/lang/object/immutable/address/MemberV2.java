@@ -1,4 +1,4 @@
-package lang.immutable.address;
+package part1.lang.object.immutable.address;
 
 public class MemberV2 {
 
