@@ -1,4 +1,4 @@
-package part1.lang.object.immutable.change;
+package part1.lang.immutable.change;
 
 public class MutableObj {
 

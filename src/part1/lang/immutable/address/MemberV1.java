@@ -1,20 +1,20 @@
-package part1.lang.object.immutable.address;
+package part1.lang.immutable.address;
 
-public class MemberV2 {
+public class MemberV1 {
 
     private String name;
-    private ImmutableAddress address;
+    private Address address;
 
-    public MemberV2(String name, ImmutableAddress address) {
+    public MemberV1(String name, Address address) {
         this.name = name;
         this.address = address;
     }
 
-    public ImmutableAddress getAddress() {
+    public Address getAddress() {
         return address;
     }
 
-    public void setAddress(ImmutableAddress address) {
+    public void setAddress(Address address) {
         this.address = address;
     }
 

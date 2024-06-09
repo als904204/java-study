@@ -1,4 +1,4 @@
-package part1.lang.object.immutable.address;
+package part1.lang.immutable.address;
 
 public class RefMain1_3 {
 

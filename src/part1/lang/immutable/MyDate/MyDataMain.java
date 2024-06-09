@@ -1,4 +1,4 @@
-package part1.lang.object.immutable.MyDate;
+package part1.lang.immutable.MyDate;
 
 public class MyDataMain {
 
