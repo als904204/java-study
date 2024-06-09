@@ -12,8 +12,6 @@ public class StringEqualsMain2 {
         String str4 = "hello";
 
         System.out.println(isSame((str3), str4));
-
-        str3 = "updatedHello";
     }
 
     private static boolean isSame(String s1, String s2) {
