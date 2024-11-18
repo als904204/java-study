@@ -37,7 +37,11 @@ public class VolatileFlagMain {
 
     static class MyTask implements Runnable {
 
-        boolean runFlag = true;
+        // 캐시 메모리 사용하지 않고 항상 메인 메모리에 접근하도록 설정
+        volatile boolean runFlag = true;
+
+        // 캐시 메모리에만 접근
+        //boolean runFlag = true;
 
         @Override
         public void run() {
