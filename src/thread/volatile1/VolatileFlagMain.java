@@ -22,6 +22,17 @@ public class VolatileFlagMain {
 
         log.info("runFlag = " + task.runFlag);
         log.info("main 종료");
+
+        /**
+         * main 쓰레드의 flag 는 false 로 업데이트 됨
+         * 하지만, OS는 성능 향상을 위해 매번 메모리에서 읽는게 아닌
+         * CPU마다 캐시데 데이터를 쌓아둠
+         * 그러므로 다음과 같이 됨
+         * CPU1(main) cache -> flag = false 이 부분만 변경 될 뿐 실제 메모리엔 변경이 안됨
+         * CPU2(task) cache -> flag = true
+         *
+         *
+         */
     }
 
     static class MyTask implements Runnable {
