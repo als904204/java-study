@@ -4,6 +4,7 @@ import static java.lang.Thread.sleep;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.atomic.AtomicInteger;
 
 public class IncrementThreadMain {
 
@@ -11,6 +12,9 @@ public class IncrementThreadMain {
 
     public static void main(String[] args) throws InterruptedException {
         test(new BasicInteger());
+        test(new VolatileInteger());
+        test(new SyncInteger());
+        test(new MyAtomicInteger());
     }
 
     private static void test(IncrementInteger incrementInteger) throws InterruptedException {
