@@ -1,4 +1,4 @@
-package thread.cas;
+package thread.cas.before;
 
 public interface IncrementInteger {
 

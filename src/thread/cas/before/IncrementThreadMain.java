@@ -1,10 +1,10 @@
-package thread.cas;
+package thread.cas.before;
 
 import static java.lang.Thread.sleep;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.concurrent.atomic.AtomicInteger;
+import thread.cas.after.MyAtomicInteger;
 
 public class IncrementThreadMain {
 

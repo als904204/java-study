@@ -1,4 +1,6 @@
-package thread.cas;
+package thread.cas.before;
+
+import thread.cas.after.MyAtomicInteger;
 
 public class IncrementPerformanceMain {
 

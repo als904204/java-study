@@ -1,6 +1,7 @@
-package thread.cas;
+package thread.cas.after;
 
 import java.util.concurrent.atomic.AtomicInteger;
+import thread.cas.before.IncrementInteger;
 
 public class MyAtomicInteger implements IncrementInteger {
 
