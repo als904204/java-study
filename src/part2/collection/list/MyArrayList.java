@@ -56,11 +56,11 @@ public class MyArrayList<E> {
         return oldValue;
     }
 
-    public E remove(int index) {
-        E oldValue = get(index);
+    public Object remove(int index) {
+        Object oldValue = get(index);
         shiftLeftFrom(index);
-
-        size--;
+        // 데이터 이동
+        --size;
         elementData[size] = null;
         return oldValue;
     }
